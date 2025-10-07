@@ -207,11 +207,11 @@ jobs:
       # 🚨 SECURITY ISSUE: Uncomment ONLY ONE of the following login methods:
 
       # BAD: Hardcoded credentials (Step 1 - shows the problem)
-      - name: Log in to Registry (INSECURE - Step 1)
-        run: |
-          # 🚨 SECURITY ISSUE: Hardcoded password!
-          echo "password123" | docker login ghcr.io -u admin --password-stdin
-          echo "⚠️  Using hardcoded credentials - SECURITY RISK!"
+      #- name: Log in to Registry (INSECURE - Step 1)
+      #  run: |
+      #    # 🚨 SECURITY ISSUE: Hardcoded password!
+      #    echo "password123" | docker login ghcr.io -u admin --password-stdin
+      #    echo "⚠️  Using hardcoded credentials - SECURITY RISK!"
 
       # GOOD: Uncomment for Step 4: Secure Authentication
       # 👇 Uncomment this section in Step 4 and comment out the above
