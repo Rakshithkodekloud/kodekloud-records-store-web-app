@@ -215,7 +215,7 @@ jobs:
       - name: Prepare lowercase envs
         run: |
          echo "ACTOR_LC=${GITHUB_ACTOR,,}" >> $GITHUB_ENV
-         echo "REPO_LC=${GITHUB_REPOSITORY,,}" >> $GITHUB_EN
+         echo "REPO_LC=${GITHUB_REPOSITORY,,}" >> $GITHUB_ENV
 
       - name: Log in to GitHub Container Registry
         run: |
