@@ -212,10 +212,10 @@ jobs:
       # GOOD: Uncomment for Step 4: Secure Authentication
       # 👇 Uncomment this section in Step 4 and comment out the above
       # CAPSTONE: Only use GitHub Container Registry (GHCR) for image storage and deployment in this project.
-      # - name: Log in to GitHub Container Registry
-      #   run: |
-      #     echo "${{ secrets.REGISTRY_PAT }}" | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
-      #     echo "✅ Using secure GitHub token authentication"
+      - name: Log in to GitHub Container Registry
+        run: |
+          echo "${{ secrets.REGISTRY_PAT }}" | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
+          echo "✅ Using secure GitHub token authentication"
 
       - name: Build and tag Docker image
         run: |
